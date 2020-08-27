@@ -13,7 +13,8 @@ const AppRoutes = () => (
         options={{headerShown: false}}/>
         <AppStack.Screen 
         name="Planet" 
-        component={Planet}/>
+        component={Planet}
+        options={{headerTitle: 'Detalhes'}}/>
     </AppStack.Navigator>    
 );
 

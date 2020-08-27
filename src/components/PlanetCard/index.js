@@ -5,7 +5,7 @@ import SwapiContext from '../../contexts/swapi';
 
 export default function PlanetCard({planet}){
     const {getResidents} = useContext(SwapiContext)
-    const [residents, setResidents] = useState([])
+    const [residents, setResidents] = useState(['Buscando moradores...'])
 
     useEffect(() =>{
         async function fetchUsers(){
@@ -23,7 +23,7 @@ export default function PlanetCard({planet}){
             <Text><B>Clima: </B>{planet.climate}</Text>
             <Text><B>Terreno: </B>{planet.terrain}</Text>
             <Text><B>População: </B>{planet.population}</Text>
-            <Text><B>Moradores: </B>{residents}</Text>
+            <Text><B>Moradores: </B>{residents.length > 0 ? residents : 'Este planeta não possui moradores.'}</Text>
         </View>
     )
 }
