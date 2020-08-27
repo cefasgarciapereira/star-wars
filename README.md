@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="./assets/logo.png" width="154">
   <h1 align="center">Star Wars</h1>
   <p align="center">This project was developed as selection process for a job and consists of a mobile app that navigate over all the planets from Star Wars universe. The information of app is get from [SWAPI API](https://swapi.dev/).
 </p>
